@@ -1,0 +1,21 @@
+<!doctype html>
+<html ng-app="app">
+	<head>
+		<title>Hello AngularJS</title>
+        <script src="bower_components/angular/angular.js"></script>
+    	<script src="BarCtrl.js"></script>
+        <script src="bower_components/chart.js/dist/Chart.min.js"></script>
+        <script src="bower_components/angular-chart.js/dist/angular-chart.min.js"></script>
+        
+	</head>
+
+	<body>
+        <h3> Git Statistics</h3>
+		<div ng-controller="BarCtrl">
+    <canvas id="bar" class="chart chart-bar"
+        chart-data="data" chart-labels="labels"> chart-series="series"
+    </canvas>
+    </div>
+       
+	</body>
+</html>
